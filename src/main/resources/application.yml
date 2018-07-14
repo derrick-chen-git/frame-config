@@ -1,0 +1,10 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        default-application-name: frame-config
+        git:
+          uri: https://github.com/derrick-chen-git/config-file/
+          label: master
