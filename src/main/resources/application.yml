@@ -1,6 +1,8 @@
 server:
   port: 8888
 spring:
+  application:
+    name: frame-config
   cloud:
     config:
       server:
@@ -8,3 +10,8 @@ spring:
         git:
           uri: https://github.com/derrick-chen-git/config-file/
           label: master
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://47.106.212.169:8761/eureka/
