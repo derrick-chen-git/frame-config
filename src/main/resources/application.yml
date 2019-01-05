@@ -15,7 +15,7 @@ eureka:
     service-url:
       defaultZone:  http://47.106.212.169:8761/eureka/
   instance:
-    #lease-renewal-interval-in-seconds: 5
-    #lease-expiration-duration-in-seconds: 15
-    instance-id: ${spring.application.name}
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+    #instance-id: ${spring.application.name}
     prefer-ip-address: true
